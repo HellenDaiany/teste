@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Agencia de viagens</title>
+  </head>
+  <body>
+    <header class="container-fluid p-4 bg-info text-center">
+      <nav class="navbar navbar-expand-lg bg-light">
+        <a class="navbar-brand" href="#">Viagem dos Sonhos</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#conteudoNavbarSuportado"
+          aria-controls="conteudoNavbarSuportado"
+          aria-expanded="false"
+          aria-label="Alterna navegação"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="conteudoNavbarSuportado"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Pacotes <span class="sr-only"></span
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Taxas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contatos</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="container-fluid bg-light text-center p-4">
+      <h2>Conheça nossos pacotes</h2>
+      <p>
+        Donec convallis tellus vitae elementum blandit. Aliquam convallis ut
+        quam id placerat. Pellentesque vel pharetra elit, eget varius sem. Donec
+        ut luctus tortor, a consectetur augue. Donec in mi sagittis, facilisis
+        odio sed, auctor mi. Pellentesque habitant morbi tristique senectus et
+        netus et malesuada fames ac turpis egestas. Phasellus est ante, faucibus
+        eget elementum vitae, fermentum vitae nisi. Phasellus suscipit erat
+        vitae pulvinar efficitur. Donec venenatis cursus hendrerit.
+      </p>
+      <p>
+        Donec convallis tellus vitae elementum blandit. Aliquam convallis ut
+        quam id placerat. Pellentesque vel pharetra elit, eget varius sem. Donec
+        ut luctus tortor, a consectetur augue. Donec in mi sagittis, facilisis
+        odio sed, auctor mi. Pellentesque habitant morbi tristique senectus et
+        netus et malesuada fames ac turpis egestas. Phasellus est ante, faucibus
+        eget elementum vitae, fermentum vitae nisi. Phasellus suscipit erat
+        vitae pulvinar efficitur. Donec venenatis cursus hendrerit.
+      </p>
+      <div class="row">
+        <figure class="col text-center">
+          <img src="img/nossos pacotes/dubai.jpg" alt="Imagem de Dubai" />
+          <figcaption>Dubai</figcaption>
+        </figure>
+
+        <figure class="col text-center">
+          <img
+            src="img/nossos pacotes/new york.jpg"
+            alt="Central Park New York City"
+          />
+          <figcaption>New York</figcaption>
+        </figure>
+
+        <figure class="col text-center">
+          <img src="img/nossos pacotes/london.jpg" alt="london" />
+          <figcaption>London</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="container-fluid bg-info text-center p-4">
+      <h2>TAXAS E SERVIÇOS</h2>
+      <p>Consulte os valores dos nossos serviços</p>
+      <table class="table table-info table-striped table-hover table-bordered">
+        <caption>
+          Descrição dos serviços e seus respectivos valores:
+        </caption>
+        <thead class="table-success">
+          <tr>
+            <th>Serviço</th>
+            <th>Valor</th>
+          </tr>
+        </thead>
+        <tbody class="table- group- divider">
+          <tr>
+            <td>Reserva de Hotel</td>
+            <td>900,00</td>
+          </tr>
+          <tr>
+            <td>Compras de passagens</td>
+            <td>700,00</td>
+          </tr>
+          <tr>
+            <td>Aluguel de carros</td>
+            <td>100,00</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="container-fluid bg-light p-4">
+      <h2 class="text-center">Venha e faça seu orçamento!</h2>
+      <form method="GET" action="">
+        <fieldset>
+          <legend>Dados Pessoais</legend>
+          <div class="mb-3">
+            <label form="label" for="nome">Nome:</label>
+            <input
+              type="text"
+              class="form-control border-info"
+              name="nome"
+              id="nome"
+            />
+          </div>
+          <div class="mb-3">
+            <label form="label" for="email">E-mail:</label>
+            <input
+              type="text"
+              class="form-control border-info"
+              required
+              name="email"
+              id="email"
+            />
+          </div>
+          <div class="mb-3">
+            <label form="label" for="dataIda">Data de ida:</label>
+            <input
+              type="date"
+              class="form-control border-info"
+              name="dataIda"
+              id="dataIda"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label form="label" for="dataVolta">Data de volta:</label>
+            <input
+              type="date"
+              class="form-control border-info"
+              name="dataVolta"
+              id="dataVolta"
+            />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Qual(ais) serviço(s) você deseja contratar?</legend>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              name="passagens"
+              value="Passagens"
+              id="compraPassagens"
+            />
+            <label class="form-check-label" for="compraPassagens"
+              >Compra de passagens</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="hospedagem"
+              value="Hospedagem"
+              id="reservaHospedagem"
+            />
+            <label class="form-check-label" for="reservaHospedagem">
+              Reserva de hospedagem
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="veiculo"
+              value="Veiculo"
+              id="aluguelVeiculos"
+            />
+            <label class="form-check-label" for="aluguelVeiculos">
+              Aluguel de veiculos
+            </label>
+          </div>
+        </fieldset>
+        <button class="btn btn-outline-success">salvar</button>
+      </form>
+    </section>
+    <footer class="container-fluid bg-info p-2 text-center">
+      <p>Desenvolvido por Hellen Daiany</p>
+    </footer>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
